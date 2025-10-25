@@ -1,6 +1,6 @@
 from fastapi import APIRouter
-import schemas
-import services.student_service as student_service
+from App import schemas
+from App.services import student_service
 
 router = APIRouter(prefix="/students", tags=["Students"])
 

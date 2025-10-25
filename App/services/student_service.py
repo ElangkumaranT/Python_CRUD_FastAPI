@@ -1,6 +1,6 @@
 from bson import ObjectId, errors as bson_errors
 from fastapi import HTTPException
-from database import student_collection
+from App.database import student_collection
 
 def student_helper(student) -> dict:
     return {
